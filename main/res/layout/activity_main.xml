@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#121212"> <!-- Dark background -->
+
+    <!-- Loading spinner -->
+    <ProgressBar
+        android:id="@+id/loadingSpinner"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <!-- Quote display box -->
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/quote_card_bg"
+        android:padding="24dp"
+        android:text="Click the button below to get a motivational quote!"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerInParent="true"
+        android:elevation="6dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp" />
+
+    <!-- Generate button -->
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Quote"
+        android:backgroundTint="#BB86FC"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_below="@id/quoteTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:elevation="4dp" />
+</RelativeLayout>
